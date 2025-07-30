@@ -1,0 +1,7 @@
+Requirements:
+
+1. Parking lot should be different size (bike, car, bus)
+2. Payment should support different method like upi, card, cash
+3. Customer should issue parking coupon during entry
+4. Customer pay amount during exit
+5. Display board to get status of parking

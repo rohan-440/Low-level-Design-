@@ -1,0 +1,23 @@
+1.Primary Actor :
+    Customer :
+    a.Take receipt at entry
+    b.Park vehicle 
+    c. Scan the receipt
+    d. Pay charge at exit
+
+2.Secondary Actor :
+    Admin : 
+    a. Login/Logout
+    b. View/update
+    c. Add Lot
+    d. Remove Lot 
+    e. Update the amount
+
+3. System:
+    a. Get the vehicle details & entry time
+    b. Allot the parking Lot
+    c. Display board to get the status
+    d. Calculate the charge during exit 
+    e. Payment option with method like upi/cash/card
+     
+
