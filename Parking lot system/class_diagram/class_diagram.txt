@@ -1,0 +1,115 @@
+Components:
+
+1. Vehicle
+    Vehicle will be of abstract class which will extends 
+    car,bike,Van,etc
+    -VehicleNo : string
+    -ticket : ParkingTicket
+    +assignTicket():void
+
+
+2.Parking spot
+    Parking spot will be of abstract class which will extends
+    bike_lot,car_lot,Van_lot
+    -id : int
+    -vehicle : Vehicle
+    -isFree : bool
+    + assignVehicle() : bool
+    + removeVehicle() : bool
+
+3. Account 
+    Account will be of abstract class which will extends 
+    admin class
+    -userName : string
+    -password : string
+    +resetpassword() : bool 
+
+    This will extends admin class with methods 
+    + addParkingSpot(floorName,spot) : bool
+    + removeParkingSpot(floorName,spot) : bool 
+    + addEntrance(entrance)
+    + addExit(exit)
+    
+4. Display Board 
+    -id : int 
+    - parkingSpot : map<string,List<ParkingSpot>>
+    + addParkingSpot(string spotType,List<ParkingSpot> spots) : void
+    + showFreeSlot() : void
+
+
+5. Entrance 
+    -id : int
+    +getTicket() : ParkingTicket
+
+6. Exit 
+    - id:int
+    +validateTicket():void
+
+7. ParkingTicket 
+    -ticketNo : int 
+    -entryTime : date/Time
+    -exitTime : data/Time 
+    - amount : double 
+    - status : TicketStatus 
+    - vehicle : Vehicle 
+    - payment : Payment 
+    - entrance : Entrance
+    - exit : Exit 
+
+8 Payment 
+    - amount : double 
+    - status : Payment Status 
+    - timeStamp : data/Time 
+    + initiateTranscation() : bool 
+
+    which will extends class like cash,upi,card 
+
+9. Parking rate 
+    - hours : double 
+    - rate : double
+    + Calculate():void 
+
+10. Parking lot 
+    - id : int 
+    - name : string 
+    - address : Address 
+    - entrance : Entrance 
+    - exit : map<string,Exit> 
+    + getParkingTicket() : ParkingTicket 
+    + isFull() : bool 
+
+11. Payment Status : (Enum) type because we dont need in future
+    Completed
+    Failed 
+    Pending
+    Refunded 
+    Unpaid 
+
+12. Account Status : (Enum) 
+    Active 
+    Inactive 
+    Closed
+    BlockListed 
+    None
+
+13 . TicketStatus : (Enum)
+    Issued
+    Paid
+    Unpaid 
+    Cancelled 
+    Refunded
+
+14. Address : (Enum)
+    zipcode : int 
+    city : string 
+    country : string 
+    state : string 
+    area : string 
+
+15. Person : (Enum) 
+    - name : string 
+    - address : Address 
+    - contact no : long long int 
+    
+
+
