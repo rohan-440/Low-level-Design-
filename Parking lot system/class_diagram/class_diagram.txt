@@ -5,7 +5,7 @@ Components:
     car,bike,Van,etc
     -VehicleNo : string
     -ticket : ParkingTicket
-    +assignTicket():void
+    +assignTicket(ParkingTicket *ticket):void
 
 
 2.Parking spot
@@ -21,14 +21,15 @@ Components:
     Account will be of abstract class which will extends 
     admin class
     -userName : string
-    -password : string
+    -email : string
+    -password : string    
     +resetpassword() : bool 
 
     This will extends admin class with methods 
     + addParkingSpot(floorName,spot) : bool
     + removeParkingSpot(floorName,spot) : bool 
-    + addEntrance(entrance)
-    + addExit(exit)
+    + addEntrance(entrance) : bool
+    + addExit(exit) : bool 
     
 4. Display Board 
     -id : int 
@@ -78,7 +79,7 @@ Components:
     + getParkingTicket() : ParkingTicket 
     + isFull() : bool 
 
-11. Payment Status : (Enum) type because we dont need in future
+11. Payment Status : (Enum) type because we dont need to modify in future
     Completed
     Failed 
     Pending
@@ -99,17 +100,17 @@ Components:
     Cancelled 
     Refunded
 
-14. Address : (Enum)
+14. Address : 
     zipcode : int 
     city : string 
     country : string 
     state : string 
     area : string 
 
-15. Person : (Enum) 
+15. Person : 
     - name : string 
     - address : Address 
     - contact no : long long int 
-    
+
 
 
