@@ -11,3 +11,27 @@ private:
 public
     virtual void assignTicket(ParkingTicket *ticket) = 0;
 };
+
+class Car : public Vehicle
+{
+public:
+    void assignTicket(ParkingTicket *ticket) override
+    {
+    }
+};
+
+class Bike : public Vehicle
+{
+public:
+    void assignTicket(ParkingTicket *ticket) override
+    {
+    }
+};
+
+class Van : public Vehicle
+{
+public:
+    void assignTicket(ParkingTicket *ticket) override
+    {
+    }
+};
