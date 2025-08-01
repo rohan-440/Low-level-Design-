@@ -34,5 +34,3 @@ This repository contains my personal notes, design patterns, system design conce
   - Code Modularity and Extensibility
 
 ---
-
-## 📁 Folder Structure
