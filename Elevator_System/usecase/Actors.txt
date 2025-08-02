@@ -1,0 +1,21 @@
+Actors:
+
+1. Primary Actors:
+   Passengers:
+   a. Call the Elevator by pressing up/down
+   b. select the destination floor by pressing then in-car panel
+   c. Emergency stops
+   d. To open/close the door when idle state
+
+2. Secondary Actors:
+    Operator:
+    a. Enter Maintenaince mode 
+    b. Exit Maintenaince mode
+    c. Acknowledge/resolved alerts modes
+
+3. System :
+    Elevator:
+    a. Move up/down or idle
+    b. Update display realtime
+    c. detect overloading/sign alarm
+    d. notify Operator
