@@ -1,0 +1,8 @@
+Requirements:
+
+1. Elevator car should configure upto 15 floor
+2. It should have upto 3 elevators cars 
+3. Each car should have maximum capacity of 500 kg (6 people)
+4. It should have display inside the car and outside each floor
+5. Least wait time for the user
+6. It should have buttons for emerency stop,open and close doors
