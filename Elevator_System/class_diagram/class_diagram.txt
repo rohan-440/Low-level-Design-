@@ -1,0 +1,57 @@
+Components:
+
+1.Button
+    Button is an abstract class which will extend the DoorButton,
+    ElevatorButton,HallButton,Emergency Button 
+    -pressed: bool
+    +pressDown()
+    +isPressed()
+    +reset()
+
+    DoorButton:
+    +isPressed()
+
+    ElevatorButton:
+    -destinationFloor:int
+    +getDestinationFloor()
+    +isPressed()
+
+    HallButton:
+    - direction : Direction 
+    +getDirection()
+    +isPressed()
+
+    EmergencyButton:
+    +isPressed()
+
+2. ElevatorPanel
+    -floorButtons : ElevatorButton{list}
+    -openButton : ElevatorButton
+    -closeButton : ElevatorButton
+    -emergenctButton : ElevatorButton
+    +enterEmergency()
+    +exitEmergency()
+
+3. HallButton:
+    -up : HallButton
+    -down : HallButton
+    +getUpButton() : HallButton
+    +getDownButton() : HallButton
+
+4. Display:
+    -floor : int
+    -direction : Direction
+    -load: int
+    -overload : bool 
+    -state : ElevatorState 
+    -maintaince : bool 
+    +showElevatorDisplay()
+    +update()
+
+5. Door :
+    -state : DoorState
+    +isOpen()
+    +Close()
+    +getState():DoorState
+
+6. 
